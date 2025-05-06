@@ -16,4 +16,7 @@ Swagger tutorial
 Changes in open Api 3.0
 [link](https://blog.restcase.com/6-most-significant-changes-in-oas-3-0/)
 
+Sample github profile
+[praveenkumar](https://github.com/CodeWithPraveen)
+
  
