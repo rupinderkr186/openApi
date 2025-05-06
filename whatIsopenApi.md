@@ -56,32 +56,27 @@ components:
           format: date
 ```
 ## 🧩 Explanation of Each Section
-openapi: 3.0.1
-Declares the version of the OpenAPI Specification used.
+`openapi: 3.0.1`  
+Declares the version of the OpenAPI Specification used.  
 📌 Most widely supported version.
 
-info
+## `info`
 Metadata about the API.
-```
-yaml
+```yaml
 info:
   title: Truck Parking Club API     # Display name for your API
   version: 1.0.0                    # Current version of the API
 ```
 
-servers
+## `servers`
 Defines the base URLs where the API is hosted.
-```
-yaml
+```yaml
 servers:
   - url: https://your-api.azurewebsites.net  # Where requests are sent (Azure-hosted API)
 ```
-paths
+## `paths`
 Lists all available endpoints and HTTP methods (GET, POST, etc.).
-```
-yaml
-Copy
-Edit
+```yaml
 paths:
   /bookings:     # Route path of the API
     get:         # HTTP GET method
@@ -90,18 +85,14 @@ paths:
         '200':                  # HTTP status code
           description: OK      # Description of the response
 ```
-summary: Short explanation of what this endpoint does
+`summary`: Short explanation of what this endpoint does  
+`responses`: Defines possible HTTP responses  
+`'200'`: Standard success (OK)  
+`'201'`: Created (for POST)  
 
-responses: Defines possible HTTP responses
-
-'200': Standard success (OK)
-
-'201': Created (for POST)
-
-post and requestBody
+## `post` and `requestBody`
 Defines how POST requests work.
-```
-yaml
+```yaml
     post:
       summary: Create a booking
       requestBody:                 # Defines what the client must send
@@ -110,10 +101,9 @@ yaml
             schema:
               $ref: '#/components/schemas/Booking'  # Reuse a schema
 ```
-components
+## `components`
 Reusable components for schema definitions, security, parameters, etc.
-```
-yaml
+```yaml
 components:
   schemas:
     Booking:            # Defines a Booking object schema
