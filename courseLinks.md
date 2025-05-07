@@ -16,6 +16,10 @@ Swagger tutorial
 Changes in open Api 3.0
 [link](https://blog.restcase.com/6-most-significant-changes-in-oas-3-0/)
 
+Swagger Hub Public Api Search [link](https://app.swaggerhub.com/search)
+
+House Rental Platform Api [houseRental](https://app.swaggerhub.com/apis/gohiks/EasyRentAPI/1.0.0)
+
 Sample github profile
 [praveenkumar](https://github.com/CodeWithPraveen)
 
